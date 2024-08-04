@@ -17,33 +17,33 @@ public class AllCostumerDetails {
 			
 			ResultSetMetaData rm = rs.getMetaData();
 //			int columnNum = rm.getColumnCount();
-			System.out.println("+================================================================================================================================+");
-			System.out.println("||\t\t\t\t\t\t   All Costumer Details Here \t\t\t\t\t\t\t||");
-			System.out.println("+================================================================================================================================+");
+			System.out.println("+================================================================================================================================================================+");
+			System.out.println("||\t\t\t\t\t\t\t\t ***All Costumer Details Here*** \t\t\t\t\t\t\t\t||");
+			System.out.println("+================================================================================================================================================================+");
 			
 			System.out.print("||\t"+rm.getColumnName(1)+"\t");
-			System.out.print(rm.getColumnName(2)+"\t\t");
-			System.out.print(rm.getColumnName(3)+"\t");
-			System.out.print(rm.getColumnName(4)+"\t\t\t");
-			System.out.print(rm.getColumnName(5)+"\t\t");
-			System.out.print(rm.getColumnName(6)+"\t");
-			System.out.print(rm.getColumnName(7)+"\t\t||");
+			System.out.print(rm.getColumnName(2)+"\t\t\t");
+			System.out.print(rm.getColumnName(3)+"\t\t");
+			System.out.print(rm.getColumnName(4)+"\t\t\t\t");
+			System.out.print(rm.getColumnName(5)+"\t\t\t");
+			System.out.print(rm.getColumnName(6)+"\t\t");
+			System.out.print(rm.getColumnName(7)+"\t||");
 			
 			System.out.println();
-			System.out.println("+================================================================================================================================+");
+			System.out.println("+================================================================================================================================================================+");
 
 			while(rs.next()) {
 				System.out.print("||\t"+rs.getInt("SNO")+"\t");
-				System.out.print(rs.getString("NAME")+"\t");
-				System.out.print(rs.getString("PHONENUMBER")+"\t");
-				System.out.print(rs.getString("GMAIL")+"\t\t");
-				System.out.print(rs.getString("IDPROOF")+"\t");
-				System.out.print(rs.getString("CHECKINDATE")+"\t");
-				System.out.print(rs.getString("CHECKINDATE")+"\t\t||");
+				System.out.print(rs.getString("NAME")+"\t\t");
+				System.out.print(rs.getString("PHONENUMBER")+"\t\t");
+				System.out.print(rs.getString("GMAIL")+"\t\t\t");
+				System.out.print(rs.getString("IDPROOF")+"\t\t");
+				System.out.print(rs.getString("CHECKINDATE")+"\t\t");
+				System.out.print(rs.getString("CHECKINDATE")+"\t||");
 				System.out.println();
 			}
 //			System.out.println();
-			System.out.println("+================================================================================================================================+");
+			System.out.println("+================================================================================================================================================================+");
 
 		} catch (ClassNotFoundException | SQLException e) {
 			System.out.println(e.getMessage());
