@@ -1,0 +1,9 @@
+package hotel_management_system;
+
+public class CreateDBCustomer {
+	public static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
+	public static final String URL = "jdbc:oracle:thin:@localhost:1521:MYSYSTEM";
+	public static final String USER_NAME = "Hotel_DB";
+	public static final String PASSWARD = "123";
+	
+}

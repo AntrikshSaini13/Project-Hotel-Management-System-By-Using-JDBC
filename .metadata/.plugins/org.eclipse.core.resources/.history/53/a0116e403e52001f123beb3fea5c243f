@@ -1,0 +1,31 @@
+package hotel_management_system;
+
+import java.sql.*;
+
+public class CreateDBCustomer {
+	private static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
+	private static final String URL = "jdbc:oracle:thin:@localhost:1521:MYSYSTEM";
+	private static final String USER_NAME = "Hotel_DB";
+	private static final String PASSWARD = "123";
+	
+	public void createCoustomerTable() {
+		try {
+			Class.forName(DRIVER);
+			Connection con = DriverManager.getConnection(URL, USER_NAME, PASSWARD);
+			Statement stmt = con.createStatement();
+//			stmt.execute("Create table CoustomerReservation(S.No number(10), Name varchar2(20), PhoneNumber number(13), "
+//					+ "Gmail varchar2(20), ID varchar2(20), CheckInDate varchar2(20), CheckOutDate varchar2(20)");
+			
+			stmt.execute("Create table reservation(id number(20), name varchar2(20))");
+			
+			System.out.println("Create table of Customer Successfully");
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch(Exception e) {
+			System.err.println(e.getMessage());
+		}
+	}
+	
+	
+}
