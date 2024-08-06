@@ -21,7 +21,7 @@ public class HotelReservations {
 		System.out.println("||\t10. Create Database Of Employee :\t\t||");
 		System.out.println("||\t11. How many Costumer in hotel now :\t\t||");
 		System.out.println("||\t12. Exit : \t\t\t\t\t||");
-		System.out.print("+========================================================+");
+		System.out.println("+========================================================+");
 		int num = sc.nextInt();
 		
 		switch(num) {
